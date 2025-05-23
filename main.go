@@ -166,7 +166,6 @@ func getDotenvPaths(folder *string, encrypt *bool) []string {
 
 		// Read the contents of the current directory
 		files, err := os.ReadDir(currentDir)
-		log.Println(files)
 		if err != nil {
 			log.Fatal(err)
 		}
